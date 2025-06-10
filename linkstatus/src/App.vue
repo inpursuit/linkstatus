@@ -4,9 +4,17 @@ import { onMounted } from 'vue'
 
 import { ref } from 'vue';
 
-const requirements = ref([]);
+interface Requirement {
+  name: string;
+  complete: number;
+  remaining: number;
+  blocked: number;
+}
+
+const requirements = ref<Requirement[]>([]);
 const loading = ref(true);
-const error = ref(null);
+import type { Ref } from 'vue';
+const error: Ref<string | null> = ref(null);
 const apiUrl = 'https://raw.githubusercontent.com/inpursuit/linkstatus/refs/heads/main/status.json';
 
 const fetchRequirements = async () => {
