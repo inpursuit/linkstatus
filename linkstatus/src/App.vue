@@ -7,7 +7,7 @@ import { ref } from 'vue';
 const requirements = ref([]);
 const loading = ref(true);
 const error = ref(null);
-const apiUrl = 'https://raw.githubusercontent.com/inpursuit/linkstatus/refs/heads/main/status.json?token=GHSAT0AAAAAADFG73VJLQDIHPNZFRV3DYHE2CISPDQ';
+const apiUrl = 'https://raw.githubusercontent.com/inpursuit/linkstatus/refs/heads/main/status.json';
 
 const fetchRequirements = async () => {
   loading.value = true;
