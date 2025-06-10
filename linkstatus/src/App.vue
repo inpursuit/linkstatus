@@ -7,12 +7,13 @@ import { ref } from 'vue';
 const requirements = ref([]);
 const loading = ref(true);
 const error = ref(null);
-const apiUrl = 'https://raw.githubusercontent.com/username/repo/main/requirements.json';
+const apiUrl = 'https://raw.githubusercontent.com/inpursuit/linkstatus/refs/heads/main/status.json?token=GHSAT0AAAAAADFG73VJLQDIHPNZFRV3DYHE2CISPDQ';
 
 const fetchRequirements = async () => {
   loading.value = true;
   error.value = null;
   try {
+    /*
     const mockData = [
       { name: "Basic Host", complete: 80, remaining: 20, blocked: 0 },
       { name: "J2.x PPLI", complete: 70, remaining: 20, blocked: 10 },
@@ -22,6 +23,12 @@ const fetchRequirements = async () => {
     ];
     await new Promise(res => setTimeout(res, 1000));
     requirements.value = mockData;
+    */
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    requirements.value = await response.json();
   } catch (e) {
     if (e instanceof Error) {
       error.value = e.message;

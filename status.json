@@ -1,7 +1,14 @@
 [
-	{ "name": "Basic Host", "complete": 80, "remaining": 20, "blocked": 0 },
-	{ "name": "J2.x PPLI", "complete": 70, "remaining": 20, "blocked": 10 },
-	{ "name": "J12.0 Mission Assignment", "complete": 20, "remaining": 60, "blocked": 20 },
-	{ "name": "Advanced Sensor Integration", "complete": 45, "remaining": 45, "blocked": 10 },
-	{ "name": "UI Overhaul", "complete": 95, "remaining": 5, "blocked": 0 }
+	{ "name": "NonC2 ADSI Init and Config", "complete": 80, "remaining": 20, "blocked": 0 },
+	{ "name": "Track Picture Display", "complete": 50, "remaining": 50, "blocked": 0 },
+	{ "name": "J10.2 Engagement Status", "complete": 0, "remaining": 100, "blocked": 0 },
+	{ "name": "J10.6 Pairing", "complete": 90, "remaining": 10, "blocked": 10 },
+	{ "name": "J12.0 Mission Assignment", "complete": 10, "remaining": 70, "blocked": 20 },
+	{ "name": "J12.4 Aircraft Control", "complete": 70, "remaining": 20, "blocked": 10 },
+	{ "name": "J12.6 Sensor Target Reports", "complete": 80, "remaining": 10, "blocked": 10 },
+	{ "name": "J12.6 Engagement Status", "complete": 0, "remaining": 100, "blocked": 0 },
+	{ "name": "J12.6 Mark Points", "complete": 80, "remaining": 0, "blocked": 20 },
+	{ "name": "J15.0 Threat Warning", "complete": 10, "remaining": 90, "blocked": 0 },
+	{ "name": "J16.2 GARS", "complete": 0, "remaining": 100, "blocked": 0 },
+	{ "name": "J28.2 Free Text", "complete": 90, "remaining": 0, "blocked": 10 }
 ]
