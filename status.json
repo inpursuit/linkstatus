@@ -1,0 +1,7 @@
+[
+	{ "name": "Basic Host", "complete": 80, "remaining": 20, "blocked": 0 },
+	{ "name": "J2.x PPLI", "complete": 70, "remaining": 20, "blocked": 10 },
+	{ "name": "J12.0 Mission Assignment", "complete": 20, "remaining": 60, "blocked": 20 },
+	{ "name": "Advanced Sensor Integration", "complete": 45, "remaining": 45, "blocked": 10 },
+	{ "name": "UI Overhaul", "complete": 95, "remaining": 5, "blocked": 0 }
+]
